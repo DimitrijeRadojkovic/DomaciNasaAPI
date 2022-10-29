@@ -13,8 +13,13 @@ async function randomSlika(){
             const json = await response.json();
             console.log(json);
         
-            const slika_src = json.url;
-            document.getElementById("slika").setAttribute("src", slika_src);
+            if(json.media_type == "image"){
+                document.getElementById("slika").setAttribute("src", json.url);
+            }
+            else{
+                document.getElementById("video").setAttribute("src", json.url);
+            }
+            
         }
         catch(error){
             console.log(error);
