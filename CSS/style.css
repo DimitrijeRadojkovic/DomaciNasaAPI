@@ -1,0 +1,33 @@
+@font-face {
+    font-family: font;
+    src: url("../font/SFPRODISPLAYBOLD.OTF");
+}
+@font-face {
+    font-family: font_regular;
+    src: url("../font/SFPRODISPLAYREGULAR.OTF");
+}
+
+html{
+    font-family: font;
+}
+.senka{
+    box-shadow: 0px 10px 31px 6px rgba(0,0,0,0.3);
+}
+.senka-txt{
+    text-shadow: 0px 6px 8px rgba(0,0,0,0.2);
+}
+.main-h1{
+    font-size: 100px;
+}
+.main-p{
+    font-size: 19px;
+}
+.levo{
+    border-right: 1px solid gray;
+}
+@media screen and (max-width: 576px) {
+    .levo{
+        border-right: 0px solid black;
+        border-bottom: 1px solid gray;
+    }
+}

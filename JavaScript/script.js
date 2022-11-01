@@ -25,3 +25,23 @@ async function randomSlika(){
             console.log(error);
         }  
 }
+
+window.onscroll = function() {nav()};
+    
+function nav(){
+    let nav = document.getElementById("nav");
+    let klasa_dark = "navbar bg-dark container-fluid border d-flex justify-content-between align-items-center position-sticky sticky-top senka";
+    let klasa_white = "navbar bg-white container-fluid border d-flex justify-content-between align-items-center position-sticky sticky-top senka";
+    if(nav.offsetTop != 0){
+        
+        console.log("nije na vrhu")
+        nav.setAttribute("class", klasa_dark);
+        nav.style.color = "white";
+
+    }
+    else{
+        console.log("jeste na vrhu")
+        nav.setAttribute("class", klasa_white);
+        nav.style.color = "black";
+    }
+}
