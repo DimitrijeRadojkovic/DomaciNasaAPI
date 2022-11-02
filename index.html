@@ -35,7 +35,7 @@
                 <p class="senka-txt text-center main-p" style="font-family: font_regular;">-Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.-</p>
             </div>
             
-            <button class="btn btn-dark senka mb-5" style="font-family: font;" id="btn-dsk">Get A Random Image</button>
+            <a href="#link"><button class="btn btn-dark senka mb-5" style="font-family: font;" id="btn-dsk">Get An Image</button></a>
 
         </div>
 
@@ -56,11 +56,38 @@
         
         
     </div>
+    
+    <div class="container-fluid d-flex flex-column mt-sm-0 mt-5 align-items-center justify-content-center" id="link">
 
-    <input type="date" id="datum"><button onclick="randomSlika()">uzmi datum</button>
-    <div id="div"></div>
-    <img src="" alt="" id="slika">
-    <iframe src="" frameborder="0" id="video"></iframe>
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <h2 class="senka-txt text-center" style="font-family: font;">Enter A Date</h2>
+        </div>
+
+        <div class="col-sm-8 col-12">
+
+            <form class="d-flex flex-sm-row flex-column align-items-center justify-content-evenly mt-3 mt-sm-5" id="unos">
+                <input type="number" placeholder="yyyy" class="mb-sm-0 mb-3" id="god">
+                <input type="number" placeholder="mm" class="mb-sm-0 mb-3" id="mes">
+                <input type="number" placeholder="dd" class="mb-sm-0 mb-3" id="dan">
+            </form>
+
+        </div>
+
+        <p class="senka-txt text-center text-danger" style="font-family: font;" id="greska"></p>
+
+        <div class="col-sm-8 col-12 d-flex align-items-center justify-content-evenly mt-sm-5 mt-3">
+
+            <button class="btn btn-dark senka" style="font-family: font;" onclick="randomSlika(this)">Today</button>
+            <button class="btn btn-dark senka" style="font-family: font;" onclick="randomSlika(this)">Submit A Date</button>
+
+        </div>
+
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-sm-5 mt-3">
+            <img src="" alt="" id="slika" class="w-50 mb-5">
+        </div>
+
+    </div>
+    
     <script src="./JavaScript/script.js"></script>
     
 </body>
