@@ -34,7 +34,23 @@ iframe{
     flex-grow: 1;
     height: 500px;
 }
+.fa-caret-left, .fa-caret-right{
+    cursor: pointer;
+}
+.dan-tr{
+    text-align: center;
+    font-family: font;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+#dan div{
+    text-align: center;
+}
 @media screen and (max-width: 576px) {
+    .main-h1{
+        font-size: 50px;
+    }
     .levo{
         border-right: 0px solid black;
         border-bottom: 1px solid gray;
